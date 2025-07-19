@@ -6,13 +6,6 @@ module "resource_group" {
 
 }
 
-module "resource_group1" {
-  source = "../../Module/azurerm_resource_group"
-
-  resource_group_name     = "rg-dev1"
-  resource_group_location = "central india"
-
-}
 
 module "storage_account" {
   depends_on = [module.resource_group]
