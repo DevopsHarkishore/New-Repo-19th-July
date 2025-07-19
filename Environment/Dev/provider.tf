@@ -10,7 +10,7 @@ backend "azurerm" {
     tenant_id            = "ecc8db67-d45e-4b38-9f31-423f3b5ca490"  
     storage_account_name = "stgactionmode"                             
     container_name       = "stgcontainer121"  
-    key                  = "prod.terraform.tfstate"                             
+    key                  = "terraform.tfstate"                             
   }
   
 }
