@@ -6,10 +6,10 @@ terraform {
     }
   }
 backend "azurerm" {
-    resource_group_name = "Apple"
-    tenant_id            = "ecc8db67-d45e-4b38-9f31-423f3b5ca490"  
-    storage_account_name = "stgactionmode"                             
-    container_name       = "stgcontainer121"  
+    resource_group_name = "Infra-RG"
+    tenant_id            = "2e038d55-8828-4c61-9bd1-862031ee51bb"  
+    storage_account_name = "infrastorage143"                             
+    container_name       = "infracontainer"  
     key                  = "terraform.tfstate"                             
   }
   
@@ -19,5 +19,5 @@ provider "azurerm" {
   features {
     
   }
-  subscription_id = "f732a1d0-ce01-4a76-a731-84b6a6286211"
+  subscription_id = "07181b5e-cb73-4072-8605-0c0f9f4ae28f"
 }
