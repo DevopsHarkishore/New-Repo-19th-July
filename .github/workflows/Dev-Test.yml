@@ -11,7 +11,7 @@ permissions:
 jobs:
   job:
     name: terraform init
-    runs-on: ubuntu-latest
+    runs-on: Action-hero
 
     steps:
       - name: Checkout Code
