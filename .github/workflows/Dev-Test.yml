@@ -28,3 +28,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5.0.0
         
+      - name: Azure Login
+        uses: Azure/login@v2.3.0
+        with:
+            
+            client-id: 2193dfd5-b5a7-41e2-b9e6-b6d03318167f
+            # TenantId of the Azure Service principal created.
+            tenant-id: 2193dfd5-b5a7-41e2-b9e6-b6d03318167f
+            # Azure subscriptionId
+            subscription-id: 07181b5e-cb73-4072-8605-0c0f9f4ae28f
+            
+            auth-type: id-token
+          
