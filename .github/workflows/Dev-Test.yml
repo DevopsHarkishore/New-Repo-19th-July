@@ -11,7 +11,7 @@ permissions:
 jobs:
   job:
     name: terraform init
-    runs-on: Mylable
+    runs-on: Action-hero
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
