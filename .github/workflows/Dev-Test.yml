@@ -36,4 +36,20 @@ jobs:
           tenant-id: 2e038d55-8828-4c61-9bd1-862031ee51bb
           subscription-id: 07181b5e-cb73-4072-8605-0c0f9f4ae28f
           
-          
+      - name: Terraform fmt
+        id: fmt
+        run: terraform fmt -check
+        continue-on-error: true
+      
+      - name: Terraform Init
+        id: init
+        run: terraform init -input=false
+      
+      - name: Terraform Validate
+        id: validate
+        run: terraform validate -no-color
+      
+      - name: Terraform Plan
+        id: plan
+        run: terraform plan -no-color -input=false
+        continue-on-error: true  
